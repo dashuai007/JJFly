@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+
+    
     return YES;
 }
 
@@ -41,7 +45,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+//    [self saveContext];
 }
 
 #pragma mark - Core Data stack
@@ -124,4 +128,68 @@
     }
 }
 
+- (void)lookManagerName {
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    // 设置要查询的实体
+    request.entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:[self managedObjectContext]];
+    // 设置排序（按照age降序）
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
+    request.sortDescriptors = [NSArray arrayWithObject:sort];
+    // 设置条件过滤(搜索name中包含字符串"Itcast-1"的记录，注意：设置条件过滤时，数据库SQL语句中的%要用*来代替，所以%Itcast-1%应该写成*Itcast-1*)
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Itcast-1*"];
+    request.predicate = predicate;
+    // 执行请求
+    NSError *error = nil;
+    NSArray *objs = [[self managedObjectContext] executeFetchRequest:request error:&error];
+    if (error) {
+        [NSException raise:@"查询错误" format:@"%@", [error localizedDescription]];
+    }
+    // 遍历数据
+    for (NSManagedObject *obj in objs) {
+        NSLog(@"name=%@", [obj valueForKey:@"name"]);
+    }
+}
+/* 添加*/
+- (void)addToDatabase {
+    NSManagedObject *person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:[self managedObjectContext]];
+    // 设置Person的简单属性
+    [person setValue:@"John1" forKey:@"name"];
+    [person setValue:[NSNumber numberWithInt:27] forKey:@"age"];
+    // 传入上下文，创建一个Card实体对象
+    NSManagedObject *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:[self managedObjectContext]];
+    [card setValue:@"4414241933432" forKey:@"color"];
+    // 设置Person和Card之间的关联关系
+    [person setValue:card forKey:@"card"];
+    // 利用上下文对象，将数据同步到持久化存储库
+    NSError *error = nil;
+    BOOL success = [[self managedObjectContext] save:&error];
+    if (!success) {
+        [NSException raise:@"访问数据库错误" format:@"%@", [error localizedDescription]];
+    } else {
+        NSLog(@"访问成功%@", [person valueForKey:@"name"]);
+    }
+    [self saveContext];
+}
+- (void)delePerson {
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    request.entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:[self managedObjectContext]];
+    // 设置排序（按照age降序）
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:NO];
+    request.sortDescriptors = [NSArray arrayWithObject:sort];
+    // 设置条件过滤(搜索name中包含字符串"Itcast-1"的记录，注意：设置条件过滤时，数据库SQL语句中的%要用*来代替，所以%Itcast-1%应该写成*Itcast-1*)
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name like %@", @"*Itcast-1*"];
+    request.predicate = predicate;
+    // 执行请求
+    NSError *error = nil;
+    NSArray *objs = [[self managedObjectContext] executeFetchRequest:request error:&error];
+    [[self managedObjectContext] deleteObject:[objs objectAtIndex:0]];
+    // 将结果同步到数据库
+    NSError *errorr = nil;
+    [[self managedObjectContext] save:&error];
+    if (errorr) {
+        [NSException raise:@"删除错误" format:@"%@", [error localizedDescription]];
+    } else {
+        NSLog(@"删除成功%@", [[objs objectAtIndex:0] valueForKey:@"name"]);
+    }
+}
 @end

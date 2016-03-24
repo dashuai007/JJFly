@@ -16,6 +16,14 @@
 		5273D5251CA29BDC00571712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5273D5231CA29BDC00571712 /* LaunchScreen.storyboard */; };
 		5273D5301CA29BDD00571712 /* CoreDataLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5273D52F1CA29BDD00571712 /* CoreDataLearnTests.m */; };
 		5273D53B1CA29BDD00571712 /* CoreDataLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5273D53A1CA29BDD00571712 /* CoreDataLearnUITests.m */; };
+		52B696561CA2DA1C00B837D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B696551CA2DA1C00B837D4 /* CoreData.framework */; };
+		52B696651CA37EF200B837D4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B696641CA37EF200B837D4 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52B6966D1CA37F4600B837D4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B696681CA37F4600B837D4 /* News.m */; };
+		52B6966E1CA37F4600B837D4 /* News.txt in Resources */ = {isa = PBXBuildFile; fileRef = 52B696691CA37F4600B837D4 /* News.txt */; };
+		52B6966F1CA37F4600B837D4 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B6966B1CA37F4600B837D4 /* NewsCell.m */; };
+		52B696701CA37F4600B837D4 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52B6966C1CA37F4600B837D4 /* NewsCell.xib */; };
+		52B696741CA3809800B837D4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B696731CA3809800B837D4 /* CoreDataManager.m */; };
+		5A76336F56389CB2777383CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085B892BDD6BD64A91C932C4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		085B892BDD6BD64A91C932C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA4D8A2E2CDC6326175280D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4D96B719E6396526735DBDED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5273D50F1CA29BDC00571712 /* CoreDataLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5273D5131CA29BDC00571712 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5273D5151CA29BDC00571712 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +64,18 @@
 		5273D5361CA29BDD00571712 /* CoreDataLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5273D53A1CA29BDD00571712 /* CoreDataLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataLearnUITests.m; sourceTree = "<group>"; };
 		5273D53C1CA29BDD00571712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B696551CA2DA1C00B837D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		52B696631CA37EF200B837D4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		52B696641CA37EF200B837D4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		52B696671CA37F4600B837D4 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		52B696681CA37F4600B837D4 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		52B696691CA37F4600B837D4 /* News.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = News.txt; sourceTree = "<group>"; };
+		52B6966A1CA37F4600B837D4 /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		52B6966B1CA37F4600B837D4 /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		52B6966C1CA37F4600B837D4 /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		52B696721CA3809800B837D4 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		52B696731CA3809800B837D4 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		52B696751CA38A8A00B837D4 /* CoreDataPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataPrefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B696561CA2DA1C00B837D4 /* CoreData.framework in Frameworks */,
+				5A76336F56389CB2777383CA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +108,13 @@
 		5273D5061CA29BDC00571712 = {
 			isa = PBXGroup;
 			children = (
+				52B696551CA2DA1C00B837D4 /* CoreData.framework */,
 				5273D5111CA29BDC00571712 /* CoreDataLearn */,
 				5273D52E1CA29BDD00571712 /* CoreDataLearnTests */,
 				5273D5391CA29BDD00571712 /* CoreDataLearnUITests */,
 				5273D5101CA29BDC00571712 /* Products */,
+				7115E2FD46DDAE8D995AA0B7 /* Pods */,
+				DFFE1BF7AEA564AE9AB43FF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,11 +135,15 @@
 				5273D5161CA29BDC00571712 /* AppDelegate.m */,
 				5273D5181CA29BDC00571712 /* ViewController.h */,
 				5273D5191CA29BDC00571712 /* ViewController.m */,
+				52B696721CA3809800B837D4 /* CoreDataManager.h */,
+				52B696731CA3809800B837D4 /* CoreDataManager.m */,
 				5273D51B1CA29BDC00571712 /* Main.storyboard */,
 				5273D5211CA29BDC00571712 /* Assets.xcassets */,
 				5273D5231CA29BDC00571712 /* LaunchScreen.storyboard */,
 				5273D5261CA29BDC00571712 /* Info.plist */,
 				5273D51E1CA29BDC00571712 /* CoreDataLearn.xcdatamodeld */,
+				52B696711CA37F4E00B837D4 /* Cell */,
+				52B696661CA37EF800B837D4 /* JsonKit */,
 				5273D5121CA29BDC00571712 /* Supporting Files */,
 			);
 			path = CoreDataLearn;
@@ -121,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5273D5131CA29BDC00571712 /* main.m */,
+				52B696751CA38A8A00B837D4 /* CoreDataPrefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,6 +176,45 @@
 			path = CoreDataLearnUITests;
 			sourceTree = "<group>";
 		};
+		52B696661CA37EF800B837D4 /* JsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				52B696631CA37EF200B837D4 /* JSONKit.h */,
+				52B696641CA37EF200B837D4 /* JSONKit.m */,
+			);
+			name = JsonKit;
+			sourceTree = "<group>";
+		};
+		52B696711CA37F4E00B837D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52B696671CA37F4600B837D4 /* News.h */,
+				52B696681CA37F4600B837D4 /* News.m */,
+				52B696691CA37F4600B837D4 /* News.txt */,
+				52B6966A1CA37F4600B837D4 /* NewsCell.h */,
+				52B6966B1CA37F4600B837D4 /* NewsCell.m */,
+				52B6966C1CA37F4600B837D4 /* NewsCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		7115E2FD46DDAE8D995AA0B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D96B719E6396526735DBDED /* Pods.debug.xcconfig */,
+				1CA4D8A2E2CDC6326175280D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFFE1BF7AEA564AE9AB43FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085B892BDD6BD64A91C932C4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5273D53F1CA29BDD00571712 /* Build configuration list for PBXNativeTarget "CoreDataLearn" */;
 			buildPhases = (
+				7C01A990865D2CFEECF69F7B /* Check Pods Manifest.lock */,
 				5273D50B1CA29BDC00571712 /* Sources */,
 				5273D50C1CA29BDC00571712 /* Frameworks */,
 				5273D50D1CA29BDC00571712 /* Resources */,
+				1D0B74AD59CA5FDF75ACE9D9 /* Embed Pods Frameworks */,
+				3AB0992C6AF5802AF8C121DD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +323,9 @@
 			files = (
 				5273D5251CA29BDC00571712 /* LaunchScreen.storyboard in Resources */,
 				5273D5221CA29BDC00571712 /* Assets.xcassets in Resources */,
+				52B696701CA37F4600B837D4 /* NewsCell.xib in Resources */,
 				5273D51D1CA29BDC00571712 /* Main.storyboard in Resources */,
+				52B6966E1CA37F4600B837D4 /* News.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +345,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D0B74AD59CA5FDF75ACE9D9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB0992C6AF5802AF8C121DD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C01A990865D2CFEECF69F7B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5273D50B1CA29BDC00571712 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,8 +400,12 @@
 			files = (
 				5273D51A1CA29BDC00571712 /* ViewController.m in Sources */,
 				5273D5171CA29BDC00571712 /* AppDelegate.m in Sources */,
+				52B696741CA3809800B837D4 /* CoreDataManager.m in Sources */,
+				52B6966D1CA37F4600B837D4 /* News.m in Sources */,
+				52B6966F1CA37F4600B837D4 /* NewsCell.m in Sources */,
 				5273D5141CA29BDC00571712 /* main.m in Sources */,
 				5273D5201CA29BDC00571712 /* CoreDataLearn.xcdatamodeld in Sources */,
+				52B696651CA37EF200B837D4 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +544,11 @@
 		};
 		5273D5401CA29BDD00571712 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D96B719E6396526735DBDED /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreDataLearn/CoreDataPrefix.pch;
 				INFOPLIST_FILE = CoreDataLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzeric.CoreDataLearn;
@@ -426,8 +558,11 @@
 		};
 		5273D5411CA29BDD00571712 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA4D8A2E2CDC6326175280D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreDataLearn/CoreDataPrefix.pch;
 				INFOPLIST_FILE = CoreDataLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abzeric.CoreDataLearn;
@@ -502,6 +637,7 @@
 				5273D5411CA29BDD00571712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5273D5421CA29BDD00571712 /* Build configuration list for PBXNativeTarget "CoreDataLearnTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +646,7 @@
 				5273D5441CA29BDD00571712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5273D5451CA29BDD00571712 /* Build configuration list for PBXNativeTarget "CoreDataLearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +655,7 @@
 				5273D5471CA29BDD00571712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
