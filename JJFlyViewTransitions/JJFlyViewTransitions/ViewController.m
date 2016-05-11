@@ -85,7 +85,9 @@ static NSTimeInterval timeInterVal = 0.3;
     return constraints;
 }
 
-
+- (void)updateViewConstraints {
+    
+}
 
 #pragma mark - button and view
 
@@ -178,19 +180,6 @@ static NSTimeInterval timeInterVal = 0.3;
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
