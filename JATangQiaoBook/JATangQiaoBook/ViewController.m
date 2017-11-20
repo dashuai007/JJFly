@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreText/CoreText.h>
+#import "GCDViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +25,22 @@
     } else {
         NSLog(@"already downloaded");
     }
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
+    
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    GCDViewController *gc = [[GCDViewController alloc] init];
+    [gc clickBlock:^(NSString *str) {
+       NSLog(@"%@", str);
+    }];
+    [self presentViewController:gc animated:YES completion:nil];
+}
+
+#pragma mark - test block
+
 
 #pragma mark - 下载字体，下载完成通知更新字体
 - (void)downloaded:(NSString *)fontName {
