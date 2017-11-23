@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B051F7D7A0662E680DE28DC /* libPods-JATangQiaoBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F02C2A160CB387C2DB5CB01 /* libPods-JATangQiaoBook.a */; };
 		BA12D56D1FBE7CC1009B2006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D56C1FBE7CC1009B2006 /* AppDelegate.m */; };
 		BA12D5701FBE7CC1009B2006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D56F1FBE7CC1009B2006 /* ViewController.m */; };
 		BA12D5731FBE7CC1009B2006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA12D5711FBE7CC1009B2006 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F02C2A160CB387C2DB5CB01 /* libPods-JATangQiaoBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JATangQiaoBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA12D5681FBE7CC1009B2006 /* JATangQiaoBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JATangQiaoBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA12D56B1FBE7CC1009B2006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA12D56C1FBE7CC1009B2006 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		BA12D5911FBE7CC1009B2006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA12D59D1FBE7D2A009B2006 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		BA12D59E1FBE7D2A009B2006 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		DA6F9F4DDA8DB491AD4269F0 /* Pods-JATangQiaoBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATangQiaoBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook.debug.xcconfig"; sourceTree = "<group>"; };
+		E8198FE5C1D442181B366C89 /* Pods-JATangQiaoBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATangQiaoBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B051F7D7A0662E680DE28DC /* libPods-JATangQiaoBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				BA12D5831FBE7CC1009B2006 /* JATangQiaoBookTests */,
 				BA12D58E1FBE7CC1009B2006 /* JATangQiaoBookUITests */,
 				BA12D5691FBE7CC1009B2006 /* Products */,
+				D7BEFE9FEA82874AEE09006E /* Pods */,
+				FE428E30CEE77B6045E8ECCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +144,23 @@
 			path = JATangQiaoBookUITests;
 			sourceTree = "<group>";
 		};
+		D7BEFE9FEA82874AEE09006E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F9F4DDA8DB491AD4269F0 /* Pods-JATangQiaoBook.debug.xcconfig */,
+				E8198FE5C1D442181B366C89 /* Pods-JATangQiaoBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE428E30CEE77B6045E8ECCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F02C2A160CB387C2DB5CB01 /* libPods-JATangQiaoBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA12D5941FBE7CC1009B2006 /* Build configuration list for PBXNativeTarget "JATangQiaoBook" */;
 			buildPhases = (
+				A384E8FF998ABC41D85D92B6 /* [CP] Check Pods Manifest.lock */,
 				BA12D5641FBE7CC1009B2006 /* Sources */,
 				BA12D5651FBE7CC1009B2006 /* Frameworks */,
 				BA12D5661FBE7CC1009B2006 /* Resources */,
+				25D08F5725A593572E778E12 /* [CP] Embed Pods Frameworks */,
+				91D69E90ECF3FB671EE634F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25D08F5725A593572E778E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91D69E90ECF3FB671EE634F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A384E8FF998ABC41D85D92B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JATangQiaoBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA12D5641FBE7CC1009B2006 /* Sources */ = {
@@ -434,6 +512,7 @@
 		};
 		BA12D5951FBE7CC1009B2006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6F9F4DDA8DB491AD4269F0 /* Pods-JATangQiaoBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +527,7 @@
 		};
 		BA12D5961FBE7CC1009B2006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8198FE5C1D442181B366C89 /* Pods-JATangQiaoBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
