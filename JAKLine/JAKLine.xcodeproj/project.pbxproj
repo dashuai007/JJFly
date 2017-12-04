@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0FBBE91FCFA55D007E8F9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBBE81FCFA55D007E8F9A /* AppDelegate.m */; };
+		BA0FBBEC1FCFA55D007E8F9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBBEB1FCFA55D007E8F9A /* ViewController.m */; };
+		BA0FBBEF1FCFA55D007E8F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0FBBED1FCFA55D007E8F9A /* Main.storyboard */; };
+		BA0FBBF11FCFA55D007E8F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0FBBF01FCFA55D007E8F9A /* Assets.xcassets */; };
+		BA0FBBF41FCFA55D007E8F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0FBBF21FCFA55D007E8F9A /* LaunchScreen.storyboard */; };
+		BA0FBBF71FCFA55D007E8F9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBBF61FCFA55D007E8F9A /* main.m */; };
+		BA0FBC011FCFA55D007E8F9A /* JAKLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC001FCFA55D007E8F9A /* JAKLineTests.m */; };
+		BA0FBC0C1FCFA55D007E8F9A /* JAKLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC0B1FCFA55D007E8F9A /* JAKLineUITests.m */; };
+		BA0FBC1C1FCFCB58007E8F9A /* JAKLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC1B1FCFCB58007E8F9A /* JAKLineModel.m */; };
+		BA0FBC1E1FCFD8B1007E8F9A /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = BA0FBC1D1FCFD8B1007E8F9A /* data.txt */; };
+		BA0FBC211FCFD8F0007E8F9A /* JAData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC201FCFD8F0007E8F9A /* JAData.m */; };
+		BA0FBC271FD00015007E8F9A /* JAAveragePriceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC261FD00015007E8F9A /* JAAveragePriceLayer.m */; };
+		BA0FBC2A1FD01F40007E8F9A /* JAKLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0FBC291FD01F40007E8F9A /* JAKLineView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA0FBBFD1FCFA55D007E8F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0FBBDC1FCFA55D007E8F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0FBBE31FCFA55D007E8F9A;
+			remoteInfo = JAKLine;
+		};
+		BA0FBC081FCFA55D007E8F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0FBBDC1FCFA55D007E8F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0FBBE31FCFA55D007E8F9A;
+			remoteInfo = JAKLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA0FBBE41FCFA55D007E8F9A /* JAKLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAKLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0FBBE71FCFA55D007E8F9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA0FBBE81FCFA55D007E8F9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA0FBBEA1FCFA55D007E8F9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA0FBBEB1FCFA55D007E8F9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA0FBBEE1FCFA55D007E8F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA0FBBF01FCFA55D007E8F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA0FBBF31FCFA55D007E8F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA0FBBF51FCFA55D007E8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0FBBF61FCFA55D007E8F9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA0FBBFC1FCFA55D007E8F9A /* JAKLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAKLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0FBC001FCFA55D007E8F9A /* JAKLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKLineTests.m; sourceTree = "<group>"; };
+		BA0FBC021FCFA55D007E8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0FBC071FCFA55D007E8F9A /* JAKLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAKLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0FBC0B1FCFA55D007E8F9A /* JAKLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKLineUITests.m; sourceTree = "<group>"; };
+		BA0FBC0D1FCFA55D007E8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0FBC1A1FCFCB58007E8F9A /* JAKLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKLineModel.h; sourceTree = "<group>"; };
+		BA0FBC1B1FCFCB58007E8F9A /* JAKLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKLineModel.m; sourceTree = "<group>"; };
+		BA0FBC1D1FCFD8B1007E8F9A /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		BA0FBC1F1FCFD8F0007E8F9A /* JAData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAData.h; sourceTree = "<group>"; };
+		BA0FBC201FCFD8F0007E8F9A /* JAData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAData.m; sourceTree = "<group>"; };
+		BA0FBC231FCFE1C7007E8F9A /* JAKLineDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKLineDataSourceProtocol.h; sourceTree = "<group>"; };
+		BA0FBC251FD00015007E8F9A /* JAAveragePriceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAAveragePriceLayer.h; sourceTree = "<group>"; };
+		BA0FBC261FD00015007E8F9A /* JAAveragePriceLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAAveragePriceLayer.m; sourceTree = "<group>"; };
+		BA0FBC281FD01F40007E8F9A /* JAKLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKLineView.h; sourceTree = "<group>"; };
+		BA0FBC291FD01F40007E8F9A /* JAKLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKLineView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA0FBBE11FCFA55D007E8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBBF91FCFA55D007E8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBC041FCFA55D007E8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA0FBBDB1FCFA55D007E8F9A = {
+			isa = PBXGroup;
+			children = (
+				BA0FBBE61FCFA55D007E8F9A /* JAKLine */,
+				BA0FBBFF1FCFA55D007E8F9A /* JAKLineTests */,
+				BA0FBC0A1FCFA55D007E8F9A /* JAKLineUITests */,
+				BA0FBBE51FCFA55D007E8F9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA0FBBE51FCFA55D007E8F9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FBBE41FCFA55D007E8F9A /* JAKLine.app */,
+				BA0FBBFC1FCFA55D007E8F9A /* JAKLineTests.xctest */,
+				BA0FBC071FCFA55D007E8F9A /* JAKLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA0FBBE61FCFA55D007E8F9A /* JAKLine */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FBBE71FCFA55D007E8F9A /* AppDelegate.h */,
+				BA0FBBE81FCFA55D007E8F9A /* AppDelegate.m */,
+				BA0FBBEA1FCFA55D007E8F9A /* ViewController.h */,
+				BA0FBBEB1FCFA55D007E8F9A /* ViewController.m */,
+				BA0FBC191FCFCB2F007E8F9A /* KLine */,
+				BA0FBBED1FCFA55D007E8F9A /* Main.storyboard */,
+				BA0FBBF01FCFA55D007E8F9A /* Assets.xcassets */,
+				BA0FBBF21FCFA55D007E8F9A /* LaunchScreen.storyboard */,
+				BA0FBBF51FCFA55D007E8F9A /* Info.plist */,
+				BA0FBBF61FCFA55D007E8F9A /* main.m */,
+			);
+			path = JAKLine;
+			sourceTree = "<group>";
+		};
+		BA0FBBFF1FCFA55D007E8F9A /* JAKLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FBC001FCFA55D007E8F9A /* JAKLineTests.m */,
+				BA0FBC021FCFA55D007E8F9A /* Info.plist */,
+			);
+			path = JAKLineTests;
+			sourceTree = "<group>";
+		};
+		BA0FBC0A1FCFA55D007E8F9A /* JAKLineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FBC0B1FCFA55D007E8F9A /* JAKLineUITests.m */,
+				BA0FBC0D1FCFA55D007E8F9A /* Info.plist */,
+			);
+			path = JAKLineUITests;
+			sourceTree = "<group>";
+		};
+		BA0FBC191FCFCB2F007E8F9A /* KLine */ = {
+			isa = PBXGroup;
+			children = (
+				BA0FBC1F1FCFD8F0007E8F9A /* JAData.h */,
+				BA0FBC201FCFD8F0007E8F9A /* JAData.m */,
+				BA0FBC1A1FCFCB58007E8F9A /* JAKLineModel.h */,
+				BA0FBC1B1FCFCB58007E8F9A /* JAKLineModel.m */,
+				BA0FBC251FD00015007E8F9A /* JAAveragePriceLayer.h */,
+				BA0FBC261FD00015007E8F9A /* JAAveragePriceLayer.m */,
+				BA0FBC281FD01F40007E8F9A /* JAKLineView.h */,
+				BA0FBC291FD01F40007E8F9A /* JAKLineView.m */,
+				BA0FBC231FCFE1C7007E8F9A /* JAKLineDataSourceProtocol.h */,
+				BA0FBC1D1FCFD8B1007E8F9A /* data.txt */,
+			);
+			path = KLine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA0FBBE31FCFA55D007E8F9A /* JAKLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0FBC101FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLine" */;
+			buildPhases = (
+				BA0FBBE01FCFA55D007E8F9A /* Sources */,
+				BA0FBBE11FCFA55D007E8F9A /* Frameworks */,
+				BA0FBBE21FCFA55D007E8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAKLine;
+			productName = JAKLine;
+			productReference = BA0FBBE41FCFA55D007E8F9A /* JAKLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA0FBBFB1FCFA55D007E8F9A /* JAKLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0FBC131FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLineTests" */;
+			buildPhases = (
+				BA0FBBF81FCFA55D007E8F9A /* Sources */,
+				BA0FBBF91FCFA55D007E8F9A /* Frameworks */,
+				BA0FBBFA1FCFA55D007E8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA0FBBFE1FCFA55D007E8F9A /* PBXTargetDependency */,
+			);
+			name = JAKLineTests;
+			productName = JAKLineTests;
+			productReference = BA0FBBFC1FCFA55D007E8F9A /* JAKLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA0FBC061FCFA55D007E8F9A /* JAKLineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0FBC161FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLineUITests" */;
+			buildPhases = (
+				BA0FBC031FCFA55D007E8F9A /* Sources */,
+				BA0FBC041FCFA55D007E8F9A /* Frameworks */,
+				BA0FBC051FCFA55D007E8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA0FBC091FCFA55D007E8F9A /* PBXTargetDependency */,
+			);
+			name = JAKLineUITests;
+			productName = JAKLineUITests;
+			productReference = BA0FBC071FCFA55D007E8F9A /* JAKLineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA0FBBDC1FCFA55D007E8F9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = JJFly;
+				TargetAttributes = {
+					BA0FBBE31FCFA55D007E8F9A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BA0FBBFB1FCFA55D007E8F9A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA0FBBE31FCFA55D007E8F9A;
+					};
+					BA0FBC061FCFA55D007E8F9A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA0FBBE31FCFA55D007E8F9A;
+					};
+				};
+			};
+			buildConfigurationList = BA0FBBDF1FCFA55D007E8F9A /* Build configuration list for PBXProject "JAKLine" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA0FBBDB1FCFA55D007E8F9A;
+			productRefGroup = BA0FBBE51FCFA55D007E8F9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA0FBBE31FCFA55D007E8F9A /* JAKLine */,
+				BA0FBBFB1FCFA55D007E8F9A /* JAKLineTests */,
+				BA0FBC061FCFA55D007E8F9A /* JAKLineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA0FBBE21FCFA55D007E8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0FBC1E1FCFD8B1007E8F9A /* data.txt in Resources */,
+				BA0FBBF41FCFA55D007E8F9A /* LaunchScreen.storyboard in Resources */,
+				BA0FBBF11FCFA55D007E8F9A /* Assets.xcassets in Resources */,
+				BA0FBBEF1FCFA55D007E8F9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBBFA1FCFA55D007E8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBC051FCFA55D007E8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA0FBBE01FCFA55D007E8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0FBC271FD00015007E8F9A /* JAAveragePriceLayer.m in Sources */,
+				BA0FBC2A1FD01F40007E8F9A /* JAKLineView.m in Sources */,
+				BA0FBBEC1FCFA55D007E8F9A /* ViewController.m in Sources */,
+				BA0FBBF71FCFA55D007E8F9A /* main.m in Sources */,
+				BA0FBBE91FCFA55D007E8F9A /* AppDelegate.m in Sources */,
+				BA0FBC211FCFD8F0007E8F9A /* JAData.m in Sources */,
+				BA0FBC1C1FCFCB58007E8F9A /* JAKLineModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBBF81FCFA55D007E8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0FBC011FCFA55D007E8F9A /* JAKLineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0FBC031FCFA55D007E8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0FBC0C1FCFA55D007E8F9A /* JAKLineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA0FBBFE1FCFA55D007E8F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0FBBE31FCFA55D007E8F9A /* JAKLine */;
+			targetProxy = BA0FBBFD1FCFA55D007E8F9A /* PBXContainerItemProxy */;
+		};
+		BA0FBC091FCFA55D007E8F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0FBBE31FCFA55D007E8F9A /* JAKLine */;
+			targetProxy = BA0FBC081FCFA55D007E8F9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA0FBBED1FCFA55D007E8F9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA0FBBEE1FCFA55D007E8F9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA0FBBF21FCFA55D007E8F9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA0FBBF31FCFA55D007E8F9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA0FBC0E1FCFA55D007E8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA0FBC0F1FCFA55D007E8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA0FBC111FCFA55D007E8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA0FBC121FCFA55D007E8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA0FBC141FCFA55D007E8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAKLine.app/JAKLine";
+			};
+			name = Debug;
+		};
+		BA0FBC151FCFA55D007E8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAKLine.app/JAKLine";
+			};
+			name = Release;
+		};
+		BA0FBC171FCFA55D007E8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAKLine;
+			};
+			name = Debug;
+		};
+		BA0FBC181FCFA55D007E8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAKLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAKLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAKLine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA0FBBDF1FCFA55D007E8F9A /* Build configuration list for PBXProject "JAKLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0FBC0E1FCFA55D007E8F9A /* Debug */,
+				BA0FBC0F1FCFA55D007E8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0FBC101FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0FBC111FCFA55D007E8F9A /* Debug */,
+				BA0FBC121FCFA55D007E8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0FBC131FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0FBC141FCFA55D007E8F9A /* Debug */,
+				BA0FBC151FCFA55D007E8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0FBC161FCFA55D007E8F9A /* Build configuration list for PBXNativeTarget "JAKLineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0FBC171FCFA55D007E8F9A /* Debug */,
+				BA0FBC181FCFA55D007E8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA0FBBDC1FCFA55D007E8F9A /* Project object */;
+}
