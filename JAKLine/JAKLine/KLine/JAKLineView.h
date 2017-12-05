@@ -20,5 +20,7 @@
 @property (nonatomic, assign, getter=isShowTrackingCross) BOOL isShowTrackingCross;
 - (id)initWithFrame:(CGRect)frame delegate:(id<JAKLineDataSourceProtocol>)delegate;
 
+- (void)reload;
+- (void)replacementLastPoint:(JAKLineModel *)model;//替换最后一点 tcp数据跳动的时候可用
 
 @end

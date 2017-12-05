@@ -18,7 +18,7 @@
 @implementation JAKLineModel
 
 - (void)dataWithFile:(void (^)(NSArray *))block {
-    self.dataBlock = block;
+    self.dataBlock = [block copy];
     JAData *data = [JAData new];
     [data dataAdd:self];
 }
@@ -28,6 +28,9 @@
     [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [dataArray addObject:[self mymodel:obj]];
     }];
+    if (self.dataBlock) {
+        self.dataBlock(dataArray);
+    }
     
 }
 
