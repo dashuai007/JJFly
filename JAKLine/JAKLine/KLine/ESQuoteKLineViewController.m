@@ -36,6 +36,8 @@
     //
     int  _getDataCount;
     BOOL _isLayout;
+    
+    UIBarButtonItem *followItem;//是否自选
 }
 
 @property(nonatomic, strong)WJScrollerMenuView* kTypeScroll;
@@ -246,7 +248,7 @@
 
 -(void)setNavigationAttribute
 {
-    UIBarButtonItem* followItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"following_normal.png"] style:UIBarButtonItemStylePlain target:self action:@selector(addFavorite)];
+    followItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"following_normal.png"] style:UIBarButtonItemStylePlain target:self action:@selector(addFavorite)];
     if(_isAddFavorite){
         followItem.image = [UIImage imageNamed:@"following_press.png"];
     }
@@ -513,7 +515,11 @@
 #pragma mark - 判断是拿一个进行跳转的 稍后刷新数据
     [self switchScontract:up];
     
-    
+    if(_isAddFavorite){
+        followItem.image = [UIImage imageNamed:@"following_press.png"];
+    } else {
+        followItem.image = [UIImage imageNamed:@"following_normal.png"];
+    }
     
     SSessionIdType sessionid = 0;
     int iRet = S_SubHisQuote(self.contract->ContractNo, S_KLINE_DAY, &sessionid);
@@ -527,6 +533,8 @@
     if (!_futuresBV.hidden) {
         [self.futuresBV showBets:&snap contract:self.contract];
     }
+    
+    
     
 //    _quoteKLineVC.view.userInteractionEnabled = NO;
     
