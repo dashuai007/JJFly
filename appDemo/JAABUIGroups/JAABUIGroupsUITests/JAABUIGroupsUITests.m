@@ -1,18 +1,18 @@
 //
-//  JAKLineUITests.m
-//  JAKLineUITests
+//  JAABUIGroupsUITests.m
+//  JAABUIGroupsUITests
 //
-//  Created by xiazhongchong on 30/11/2017.
+//  Created by xiazhongchong on 06/12/2017.
 //  Copyright © 2017 JJFly. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface JAKLineUITests : XCTestCase
+@interface JAABUIGroupsUITests : XCTestCase
 
 @end
 
-@implementation JAKLineUITests
+@implementation JAABUIGroupsUITests
 
 - (void)setUp {
     [super setUp];
