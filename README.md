@@ -21,7 +21,7 @@ git reflog
 回退版本之前 用git log 查看提交历史，确定可以会退到哪个版本
 git reflog查看命令历史，确定会到拿一个版本
 
-
+git status -- checkout
 
 
 
