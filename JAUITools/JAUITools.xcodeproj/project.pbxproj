@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB55FFBC8535D1FF7D361E41 /* Pods_JAUITools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0703D9EE6EF47B8C7085A8 /* Pods_JAUITools.framework */; };
 		BAB672891FD5503C00821787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB672881FD5503C00821787 /* AppDelegate.m */; };
 		BAB6728C1FD5503C00821787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB6728B1FD5503C00821787 /* ViewController.m */; };
 		BAB6728F1FD5503C00821787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB6728D1FD5503C00821787 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035C1773082416170897178E /* Pods-JAUITools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAUITools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JAUITools/Pods-JAUITools.debug.xcconfig"; sourceTree = "<group>"; };
+		9C0703D9EE6EF47B8C7085A8 /* Pods_JAUITools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JAUITools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB672841FD5503C00821787 /* JAUITools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAUITools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB672871FD5503C00821787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BAB672881FD5503C00821787 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		BAB672C41FD551C700821787 /* UIButton+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Tools.m"; sourceTree = "<group>"; };
 		BAB672C61FD551D800821787 /* UIImageView+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Tools.h"; sourceTree = "<group>"; };
 		BAB672C71FD551D800821787 /* UIImageView+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Tools.m"; sourceTree = "<group>"; };
+		F5EF4E51D7EC78F8F48E5354 /* Pods-JAUITools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAUITools.release.xcconfig"; path = "Pods/Target Support Files/Pods-JAUITools/Pods-JAUITools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB55FFBC8535D1FF7D361E41 /* Pods_JAUITools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DF114D50566CC560D2634FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				035C1773082416170897178E /* Pods-JAUITools.debug.xcconfig */,
+				F5EF4E51D7EC78F8F48E5354 /* Pods-JAUITools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B80CB3BEC3DE69C5E4B62FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0703D9EE6EF47B8C7085A8 /* Pods_JAUITools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAB6727B1FD5503C00821787 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +119,8 @@
 				BAB6729F1FD5503C00821787 /* JAUIToolsTests */,
 				BAB672AA1FD5503C00821787 /* JAUIToolsUITests */,
 				BAB672851FD5503C00821787 /* Products */,
+				1DF114D50566CC560D2634FD /* Pods */,
+				4B80CB3BEC3DE69C5E4B62FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAB672B01FD5503C00821787 /* Build configuration list for PBXNativeTarget "JAUITools" */;
 			buildPhases = (
+				19FF14AD903E4082AA62B79A /* [CP] Check Pods Manifest.lock */,
 				BAB672801FD5503C00821787 /* Sources */,
 				BAB672811FD5503C00821787 /* Frameworks */,
 				BAB672821FD5503C00821787 /* Resources */,
+				3E2FA2DE95D295572B878DB6 /* [CP] Embed Pods Frameworks */,
+				879414747DE0704C3BA63DA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +314,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19FF14AD903E4082AA62B79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAUITools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E2FA2DE95D295572B878DB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JAUITools/Pods-JAUITools-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JAUITools/Pods-JAUITools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879414747DE0704C3BA63DA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JAUITools/Pods-JAUITools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAB672801FD5503C00821787 /* Sources */ = {
@@ -460,6 +541,7 @@
 		};
 		BAB672B11FD5503C00821787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035C1773082416170897178E /* Pods-JAUITools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +556,7 @@
 		};
 		BAB672B21FD5503C00821787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EF4E51D7EC78F8F48E5354 /* Pods-JAUITools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

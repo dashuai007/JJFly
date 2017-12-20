@@ -1,0 +1,5 @@
+target 'JAUITools' do
+ use_frameworks!
+ pod 'Charts', '~>3.0.4'
+end
+

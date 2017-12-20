@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1EFBB61FDA1F4400D023C1 /* JALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1EFBB51FDA1F4400D023C1 /* JALayerViewController.m */; };
+		BA1EFBBA1FDA1F8100D023C1 /* JAViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1EFBB91FDA1F8100D023C1 /* JAViewLayer.m */; };
 		BA804B9D1FD796D9008CC379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA804B9C1FD796D9008CC379 /* AppDelegate.m */; };
 		BA804BA01FD796D9008CC379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA804B9F1FD796D9008CC379 /* ViewController.m */; };
 		BA804BA31FD796D9008CC379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA804BA11FD796D9008CC379 /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1EFBB41FDA1F4400D023C1 /* JALayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALayerViewController.h; sourceTree = "<group>"; };
+		BA1EFBB51FDA1F4400D023C1 /* JALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JALayerViewController.m; sourceTree = "<group>"; };
+		BA1EFBB81FDA1F8100D023C1 /* JAViewLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAViewLayer.h; sourceTree = "<group>"; };
+		BA1EFBB91FDA1F8100D023C1 /* JAViewLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAViewLayer.m; sourceTree = "<group>"; };
 		BA804B981FD796D9008CC379 /* JAABUIGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAABUIGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA804B9B1FD796D9008CC379 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA804B9C1FD796D9008CC379 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1EFBB71FDA1F5000D023C1 /* JALayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA1EFBB81FDA1F8100D023C1 /* JAViewLayer.h */,
+				BA1EFBB91FDA1F8100D023C1 /* JAViewLayer.m */,
+			);
+			path = JALayerViewController;
+			sourceTree = "<group>";
+		};
 		BA804B8F1FD796D9008CC379 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +125,9 @@
 				BA804B9C1FD796D9008CC379 /* AppDelegate.m */,
 				BA804B9E1FD796D9008CC379 /* ViewController.h */,
 				BA804B9F1FD796D9008CC379 /* ViewController.m */,
+				BA1EFBB41FDA1F4400D023C1 /* JALayerViewController.h */,
+				BA1EFBB51FDA1F4400D023C1 /* JALayerViewController.m */,
+				BA1EFBB71FDA1F5000D023C1 /* JALayerViewController */,
 				BA804BA11FD796D9008CC379 /* Main.storyboard */,
 				BA804BA41FD796D9008CC379 /* Assets.xcassets */,
 				BA804BA61FD796D9008CC379 /* LaunchScreen.storyboard */,
@@ -280,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA804BA01FD796D9008CC379 /* ViewController.m in Sources */,
+				BA1EFBB61FDA1F4400D023C1 /* JALayerViewController.m in Sources */,
+				BA1EFBBA1FDA1F8100D023C1 /* JAViewLayer.m in Sources */,
 				BA804BAB1FD796D9008CC379 /* main.m in Sources */,
 				BA804B9D1FD796D9008CC379 /* AppDelegate.m in Sources */,
 			);
