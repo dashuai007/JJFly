@@ -7,8 +7,8 @@ git reset --hard 0b5cb67 head 是一个指针，
 create git repository
 git init; git clone url
 
-git add file.txt(git add .)
-git commit -m 'des'
+git add file.txt(git add .)  把文件修改添加到暂存区
+git commit -m 'des' 把暂存区的所有内容提交当前分支
 git status // git diff
 git push origin master/dev
 
