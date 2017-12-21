@@ -45,7 +45,7 @@ git merge dev//newBranch
 git branch -d dev/newBranch
 git pull origin master---update
 
-git dev
+git dev  fuck dev
 
 
 
