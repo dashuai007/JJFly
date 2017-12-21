@@ -24,6 +24,9 @@ git reflog查看命令历史，确定会到拿一个版本
 git status -- checkout// edit the file and then not add .
 edit ; git checkout -- file
 
+rm file.txt -----just remove from floder if you want to recovery it-----git checkout -- file.txt
+git rm file.txt---will go into git---if you want to recovery then git reset --hard HEAD^(it is a pointer)
+
 
 
 
