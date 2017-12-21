@@ -1,7 +1,7 @@
 # JJFly
 
 into ssh floder
-cmd + shift + G
+cmd + shift + G  ~/.ssh
 
 git reset learn
 git reset --hard Head
