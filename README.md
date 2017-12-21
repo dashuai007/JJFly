@@ -53,3 +53,7 @@ then git add . ->git commit -m ->git push origin master
 git merge --no-ff -m 'merge with no-ff' dev
 git merge --no-ff -m 'merge with no-ff ' dev
 
+git dev 1
+git dev 2
+git dev 3
+
