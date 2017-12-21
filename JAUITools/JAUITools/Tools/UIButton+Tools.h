@@ -10,4 +10,16 @@
 
 @interface UIButton (Tools)
 
+/**
+ createButton
+ @param corner 如果想要圆角 大于0 for则为o
+ */
++ (UIButton *)createButtonWithRect:(CGRect)rect
+                             title:(NSString *)title
+                        titleColor:(UIColor *)titleColor
+                            target:(id)target
+                               sel:(SEL)selector
+                             image:(UIImage *)image
+                            corner:(CGFloat)corner;
+
 @end

@@ -1,0 +1,6 @@
+framework module Pods_JACharts {
+  umbrella header "Pods-JACharts-umbrella.h"
+
+  export *
+  module * { export * }
+}
