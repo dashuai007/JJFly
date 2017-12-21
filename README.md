@@ -45,10 +45,9 @@ git merge dev//newBranch
 git branch -d dev/newBranch
 git pull origin master---update
 
-git dev  fuck master
-git dev  fuck dev
-
-
-git master
+branch dev: git add file.txt--git commit -m ''
+branch master:git add file.txt --git commit -m ''
+git merge dev ===then should solve conflict <<<===>>>
+then git add . ->git commit -m ->git push origin master
 
 
