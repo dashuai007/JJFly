@@ -38,5 +38,12 @@ git remote add origin git@github.com:dashuai007/JJFly.git
 git pull
 git push --force origin master本地库的所有内容推送到远程库
 
+git branch
+git branch newBranch
+git checkout master
+git merge dev//newBranch
+git branch -d dev/newBranch
+
+
 
 
