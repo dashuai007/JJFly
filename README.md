@@ -43,6 +43,9 @@ git branch newBranch
 git checkout master
 git merge dev//newBranch
 git branch -d dev/newBranch
+git pull origin master---update
+
+git dev
 
 git master
 
