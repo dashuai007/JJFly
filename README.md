@@ -44,6 +44,6 @@ git checkout master
 git merge dev//newBranch
 git branch -d dev/newBranch
 
-
+git master
 
 
