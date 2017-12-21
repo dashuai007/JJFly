@@ -51,3 +51,5 @@ git merge dev ===then should solve conflict <<<===>>>
 then git add . ->git commit -m ->git push origin master
 
 git merge --no-ff -m 'merge with no-ff' dev
+git merge --no-ff -m 'merge with no-ff ' dev
+
