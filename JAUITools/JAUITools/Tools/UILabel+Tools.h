@@ -34,4 +34,8 @@
                     font:(CGFloat)fontSize
                  sizeFit:(BOOL)adjustsFontSize
                      tap:(void(^)(void))tapBlock;
+
++ (void)resetFontSize:(UILabel *)label
+                 rect:(CGRect)rect
+             fontSize:(CGFloat)fontSize;
 @end

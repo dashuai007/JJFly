@@ -543,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 035C1773082416170897178E /* Pods-JAUITools.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 567J8UWLT4;
@@ -558,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5EF4E51D7EC78F8F48E5354 /* Pods-JAUITools.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 567J8UWLT4;
