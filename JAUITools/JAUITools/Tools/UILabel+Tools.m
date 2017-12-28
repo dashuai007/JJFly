@@ -48,6 +48,24 @@ void(^block)(void);
     return label;
 }
 
++ (void)resetFontSize:(UILabel *)label
+                 rect:(CGRect)rect
+             fontSize:(CGFloat)fontSize {
+    CGFloat retSize = fontSize;
+    CGSize size = [label.text sizeWithAttributes:@{NSFontAttributeName:@(fontSize)}];
+    if (size.width > rect.size.width) {
+        retSize--;
+        if (retSize <= 13) {
+            label.font = [UIFont systemFontOfSize:13];
+            return;
+        } else {
+            [self resetFontSize:label rect:rect fontSize:retSize];
+        }
+    } else {
+        label.font = [UIFont systemFontOfSize:retSize];
+    }
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (block) {
         block();
