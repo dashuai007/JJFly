@@ -1,0 +1,4 @@
+*.[oa]
+#git ignore .o and .afile
+*~
+#git ignor all ~ end file
