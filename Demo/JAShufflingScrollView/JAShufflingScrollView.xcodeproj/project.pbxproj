@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA49BD5B1FFE14B300A74374 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD5A1FFE14B300A74374 /* AppDelegate.m */; };
+		BA49BD5E1FFE14B300A74374 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD5D1FFE14B300A74374 /* ViewController.m */; };
+		BA49BD611FFE14B300A74374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA49BD5F1FFE14B300A74374 /* Main.storyboard */; };
+		BA49BD631FFE14B300A74374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA49BD621FFE14B300A74374 /* Assets.xcassets */; };
+		BA49BD661FFE14B300A74374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA49BD641FFE14B300A74374 /* LaunchScreen.storyboard */; };
+		BA49BD691FFE14B300A74374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD681FFE14B300A74374 /* main.m */; };
+		BA49BD731FFE14B300A74374 /* JAShufflingScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD721FFE14B300A74374 /* JAShufflingScrollViewTests.m */; };
+		BA49BD7E1FFE14B300A74374 /* JAShufflingScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD7D1FFE14B300A74374 /* JAShufflingScrollViewUITests.m */; };
+		BA49BD8E1FFE155700A74374 /* JAShufflingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD8D1FFE155700A74374 /* JAShufflingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA49BD6F1FFE14B300A74374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA49BD4E1FFE14B300A74374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA49BD551FFE14B300A74374;
+			remoteInfo = JAShufflingScrollView;
+		};
+		BA49BD7A1FFE14B300A74374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA49BD4E1FFE14B300A74374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA49BD551FFE14B300A74374;
+			remoteInfo = JAShufflingScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA49BD561FFE14B300A74374 /* JAShufflingScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAShufflingScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA49BD591FFE14B300A74374 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA49BD5A1FFE14B300A74374 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA49BD5C1FFE14B300A74374 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA49BD5D1FFE14B300A74374 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA49BD601FFE14B300A74374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA49BD621FFE14B300A74374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA49BD651FFE14B300A74374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA49BD671FFE14B300A74374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA49BD681FFE14B300A74374 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA49BD6E1FFE14B300A74374 /* JAShufflingScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAShufflingScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA49BD721FFE14B300A74374 /* JAShufflingScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAShufflingScrollViewTests.m; sourceTree = "<group>"; };
+		BA49BD741FFE14B300A74374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA49BD791FFE14B300A74374 /* JAShufflingScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAShufflingScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA49BD7D1FFE14B300A74374 /* JAShufflingScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAShufflingScrollViewUITests.m; sourceTree = "<group>"; };
+		BA49BD7F1FFE14B300A74374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA49BD8C1FFE155700A74374 /* JAShufflingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAShufflingView.h; sourceTree = "<group>"; };
+		BA49BD8D1FFE155700A74374 /* JAShufflingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAShufflingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA49BD531FFE14B300A74374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD6B1FFE14B300A74374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD761FFE14B300A74374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA49BD4D1FFE14B300A74374 = {
+			isa = PBXGroup;
+			children = (
+				BA49BD581FFE14B300A74374 /* JAShufflingScrollView */,
+				BA49BD711FFE14B300A74374 /* JAShufflingScrollViewTests */,
+				BA49BD7C1FFE14B300A74374 /* JAShufflingScrollViewUITests */,
+				BA49BD571FFE14B300A74374 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA49BD571FFE14B300A74374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA49BD561FFE14B300A74374 /* JAShufflingScrollView.app */,
+				BA49BD6E1FFE14B300A74374 /* JAShufflingScrollViewTests.xctest */,
+				BA49BD791FFE14B300A74374 /* JAShufflingScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA49BD581FFE14B300A74374 /* JAShufflingScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BA49BD591FFE14B300A74374 /* AppDelegate.h */,
+				BA49BD5A1FFE14B300A74374 /* AppDelegate.m */,
+				BA49BD5C1FFE14B300A74374 /* ViewController.h */,
+				BA49BD5D1FFE14B300A74374 /* ViewController.m */,
+				BA49BD8B1FFE14DB00A74374 /* ScrollView */,
+				BA49BD5F1FFE14B300A74374 /* Main.storyboard */,
+				BA49BD621FFE14B300A74374 /* Assets.xcassets */,
+				BA49BD641FFE14B300A74374 /* LaunchScreen.storyboard */,
+				BA49BD671FFE14B300A74374 /* Info.plist */,
+				BA49BD681FFE14B300A74374 /* main.m */,
+			);
+			path = JAShufflingScrollView;
+			sourceTree = "<group>";
+		};
+		BA49BD711FFE14B300A74374 /* JAShufflingScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA49BD721FFE14B300A74374 /* JAShufflingScrollViewTests.m */,
+				BA49BD741FFE14B300A74374 /* Info.plist */,
+			);
+			path = JAShufflingScrollViewTests;
+			sourceTree = "<group>";
+		};
+		BA49BD7C1FFE14B300A74374 /* JAShufflingScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA49BD7D1FFE14B300A74374 /* JAShufflingScrollViewUITests.m */,
+				BA49BD7F1FFE14B300A74374 /* Info.plist */,
+			);
+			path = JAShufflingScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		BA49BD8B1FFE14DB00A74374 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BA49BD8C1FFE155700A74374 /* JAShufflingView.h */,
+				BA49BD8D1FFE155700A74374 /* JAShufflingView.m */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA49BD551FFE14B300A74374 /* JAShufflingScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA49BD821FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollView" */;
+			buildPhases = (
+				BA49BD521FFE14B300A74374 /* Sources */,
+				BA49BD531FFE14B300A74374 /* Frameworks */,
+				BA49BD541FFE14B300A74374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAShufflingScrollView;
+			productName = JAShufflingScrollView;
+			productReference = BA49BD561FFE14B300A74374 /* JAShufflingScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA49BD6D1FFE14B300A74374 /* JAShufflingScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA49BD851FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollViewTests" */;
+			buildPhases = (
+				BA49BD6A1FFE14B300A74374 /* Sources */,
+				BA49BD6B1FFE14B300A74374 /* Frameworks */,
+				BA49BD6C1FFE14B300A74374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA49BD701FFE14B300A74374 /* PBXTargetDependency */,
+			);
+			name = JAShufflingScrollViewTests;
+			productName = JAShufflingScrollViewTests;
+			productReference = BA49BD6E1FFE14B300A74374 /* JAShufflingScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA49BD781FFE14B300A74374 /* JAShufflingScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA49BD881FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollViewUITests" */;
+			buildPhases = (
+				BA49BD751FFE14B300A74374 /* Sources */,
+				BA49BD761FFE14B300A74374 /* Frameworks */,
+				BA49BD771FFE14B300A74374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA49BD7B1FFE14B300A74374 /* PBXTargetDependency */,
+			);
+			name = JAShufflingScrollViewUITests;
+			productName = JAShufflingScrollViewUITests;
+			productReference = BA49BD791FFE14B300A74374 /* JAShufflingScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA49BD4E1FFE14B300A74374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JJFly;
+				TargetAttributes = {
+					BA49BD551FFE14B300A74374 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BA49BD6D1FFE14B300A74374 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA49BD551FFE14B300A74374;
+					};
+					BA49BD781FFE14B300A74374 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA49BD551FFE14B300A74374;
+					};
+				};
+			};
+			buildConfigurationList = BA49BD511FFE14B300A74374 /* Build configuration list for PBXProject "JAShufflingScrollView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA49BD4D1FFE14B300A74374;
+			productRefGroup = BA49BD571FFE14B300A74374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA49BD551FFE14B300A74374 /* JAShufflingScrollView */,
+				BA49BD6D1FFE14B300A74374 /* JAShufflingScrollViewTests */,
+				BA49BD781FFE14B300A74374 /* JAShufflingScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA49BD541FFE14B300A74374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA49BD661FFE14B300A74374 /* LaunchScreen.storyboard in Resources */,
+				BA49BD631FFE14B300A74374 /* Assets.xcassets in Resources */,
+				BA49BD611FFE14B300A74374 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD6C1FFE14B300A74374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD771FFE14B300A74374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA49BD521FFE14B300A74374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA49BD8E1FFE155700A74374 /* JAShufflingView.m in Sources */,
+				BA49BD5E1FFE14B300A74374 /* ViewController.m in Sources */,
+				BA49BD691FFE14B300A74374 /* main.m in Sources */,
+				BA49BD5B1FFE14B300A74374 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD6A1FFE14B300A74374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA49BD731FFE14B300A74374 /* JAShufflingScrollViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA49BD751FFE14B300A74374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA49BD7E1FFE14B300A74374 /* JAShufflingScrollViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA49BD701FFE14B300A74374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA49BD551FFE14B300A74374 /* JAShufflingScrollView */;
+			targetProxy = BA49BD6F1FFE14B300A74374 /* PBXContainerItemProxy */;
+		};
+		BA49BD7B1FFE14B300A74374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA49BD551FFE14B300A74374 /* JAShufflingScrollView */;
+			targetProxy = BA49BD7A1FFE14B300A74374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA49BD5F1FFE14B300A74374 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA49BD601FFE14B300A74374 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA49BD641FFE14B300A74374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA49BD651FFE14B300A74374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA49BD801FFE14B300A74374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA49BD811FFE14B300A74374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA49BD831FFE14B300A74374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA49BD841FFE14B300A74374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA49BD861FFE14B300A74374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAShufflingScrollView.app/JAShufflingScrollView";
+			};
+			name = Debug;
+		};
+		BA49BD871FFE14B300A74374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAShufflingScrollView.app/JAShufflingScrollView";
+			};
+			name = Release;
+		};
+		BA49BD891FFE14B300A74374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAShufflingScrollView;
+			};
+			name = Debug;
+		};
+		BA49BD8A1FFE14B300A74374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567J8UWLT4;
+				INFOPLIST_FILE = JAShufflingScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAShufflingScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA49BD511FFE14B300A74374 /* Build configuration list for PBXProject "JAShufflingScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA49BD801FFE14B300A74374 /* Debug */,
+				BA49BD811FFE14B300A74374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA49BD821FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA49BD831FFE14B300A74374 /* Debug */,
+				BA49BD841FFE14B300A74374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA49BD851FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA49BD861FFE14B300A74374 /* Debug */,
+				BA49BD871FFE14B300A74374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA49BD881FFE14B300A74374 /* Build configuration list for PBXNativeTarget "JAShufflingScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA49BD891FFE14B300A74374 /* Debug */,
+				BA49BD8A1FFE14B300A74374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA49BD4E1FFE14B300A74374 /* Project object */;
+}

@@ -1,18 +1,18 @@
 //
-//  JAABUIGroupsUITests.m
-//  JAABUIGroupsUITests
+//  JAShufflingScrollViewUITests.m
+//  JAShufflingScrollViewUITests
 //
-//  Created by xiazhongchong on 06/12/2017.
-//  Copyright © 2017 JJFly. All rights reserved.
+//  Created by xiazhongchong on 04/01/2018.
+//  Copyright © 2018 JJFly. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface JAABUIGroupsUITests : XCTestCase
+@interface JAShufflingScrollViewUITests : XCTestCase
 
 @end
 
-@implementation JAABUIGroupsUITests
+@implementation JAShufflingScrollViewUITests
 
 - (void)setUp {
     [super setUp];

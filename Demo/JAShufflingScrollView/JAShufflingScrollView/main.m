@@ -1,9 +1,9 @@
 //
 //  main.m
-//  JAABUIGroups
+//  JAShufflingScrollView
 //
-//  Created by xiazhongchong on 06/12/2017.
-//  Copyright © 2017 JJFly. All rights reserved.
+//  Created by xiazhongchong on 04/01/2018.
+//  Copyright © 2018 JJFly. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
