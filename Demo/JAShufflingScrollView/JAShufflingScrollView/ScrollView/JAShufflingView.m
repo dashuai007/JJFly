@@ -26,8 +26,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(timerScrollView) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//        timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(timerScrollView) userInfo:nil repeats:YES];
+//        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
         currentPage = 1;
         [self addSubView];
     }
@@ -37,10 +37,16 @@
 - (void)addSubView {
     
     for (int i = 0; i < 3; i++) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(kScreen_width * i + kScreen_width / 2 - 50, kScreen_height / 2 - 20, 100, 40)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(kScreen_width * i, 0, self.bounds.size.width, self.bounds.size.height)];
         label.tag = 200 + i;
+        if (i == 0) {
+            label.backgroundColor = [UIColor orangeColor];
+        } else if (i == 2) {
+            label.backgroundColor = [UIColor cyanColor];
+        } else {
+            label.backgroundColor = [UIColor yellowColor];
+        }
         label.textColor = [UIColor redColor];
-        label.backgroundColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = @"--";
         [self.scrollView addSubview:label];
@@ -73,7 +79,7 @@
 - (UIPageControl *)pageControl {
     if (!_pageControl) {
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kScreen_height - 30, kScreen_width, 20)];
-        _pageControl.tintColor = [UIColor orangeColor];
+        _pageControl.backgroundColor = [UIColor redColor];
         [self addSubview:_pageControl];
     }
     return _pageControl;
@@ -87,11 +93,10 @@
     [self.scrollView setContentOffset:CGPointMake(2 * kScreen_width, kScreen_height) animated:YES];
     _pageControl.currentPage = currentPage - 1;
     [self reloadData];
-    [self.scrollView setContentOffset:CGPointMake(kScreen_width, 0) animated:NO];
+    
 }
 
 - (void)scrollPage {
-    [self.scrollView setContentOffset:CGPointMake(kScreen_width, 0) animated:NO];
     _pageControl.currentPage = currentPage - 1;
     [self reloadData];
 }
@@ -111,7 +116,7 @@
         right.text = [NSString stringWithFormat:@"%ld", currentPage + 1];
     }
     center.text = [NSString stringWithFormat:@"%ld", (long)currentPage];
-
+    [self.scrollView setContentOffset:CGPointMake(kScreen_width, 0) animated:NO];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -119,9 +124,9 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)aScrollView {
-    if (timer.isValid) {
-        return;
-    }
+//    if (timer.isValid) {
+//        return;
+//    }
 //    [timer invalidate];
     if (aScrollView.contentOffset.x == kScreen_width * 2) {
         if (currentPage == totalPage) {
