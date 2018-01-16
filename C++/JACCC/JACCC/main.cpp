@@ -80,11 +80,75 @@ C++编程分为三个部分： 1、核心库包括数据类型、变量和文字
  派生数据类型 数组，指针等
  枚举数据类型 枚举
  用户定义数据类型 结构体
+ 
  基本数据类型
+ 基本数据类型是基于整数和浮点的。C++语言支持有符号和无符号文字。基本数据类型的内存大小可能会根据32位或64位操作系统而改变
+ 32位操作系统
+ char               1byte -128~127
+ signed char        1byte -128~127
+ unsigned char      1     0~127
+ short              2     -32768 ...
+ 
+ C语言关键字C++可用
+ double else enum extern float for goto if int long register return short signed sizeof static struct switch typedef union unsigned void volatile while
+ C语言中不可用的30个C++语言关键字列表
+ asm dynamic_cast namespace retinterpret_cast bool explicit new static_cast false catch operator template friend private class this  inline public throw const_cast delete mutable protected true try typeid typename using virtual wchar_t
+ 
+ C++运算符
+ 素数运算符、关系运算符、逻辑运算符、按位运算符、赋值运算符、一元运算符、三元或条件运算符、杂项操作员
+ 
+ C++中的数组是一组具有连续内存为指导类似类型的元素。在C++中std::array是一个封装固定大小数组的容器。在C++中，数组索引从0开始。我们可以在C++数组中只存储固定的元素集合
+ 
+ C++编程中，if语句用于测试条件。
+ if语句 if-else语句 嵌套if语句 if-else-if
+ 
+ 如果for循环中使用双分好，它将执行无限次。
+ break结束循环
+ continue结束当前循环，继续下一个循环
+ goto跳转语句。它用于将控制转移程序的其他部分。它无条件跳转到指定标签。它可用于从深层嵌套循环或switch case标签传输机
+ 
+ C++函数
+ C++语言中的函数在其他编程语言中也称为过程或子例程
+ 我们可以创建函数来执行任何任务。一个函数可以调用多次。它提供模块化和代码可重用性。
+ C++中函数的有点：
+ 1.提高代码的可重用性 2.代码优化
+ 
+ 函数类型
+ C++编程语言中有两种类型的函数：
+ 库函数（在C++头文件中声明的函数，如ceil(x), cos(x), exp(x)等）
+ 用户定义函数
+ 
+ 有两种方法可以将值或数据传给C++语言的函数：通过值调用和通过引用调用。原始值在值调用中不会被修改，但通过引用调用中会被修改。
+ 
+ 值调用中，不修改原始值
+ 在值调用中，传递给函数的值由函数参数本地存储在堆栈存储器。如果给该函数参数的值，则仅更改当前函数的值，函数内修改的参数值不会反映到函数的外部。它不会改变调用方法中的变量的值。
+ 在引用调用中原始值会被修改，因为我们通过引用地址来调用的。这里值的地址在函数中传递，因为实际和形式参数共享相同的地址空间。因此，在函数内部改变的值会反映在函数的内部以及外部。
+ 
+ ====通过值调用->将值的副本传递给函数，函数内不得给该不会反映在外部，实际和形式参数将在不同的内存位置创建
+ ====通过引用调用->将值的地址传递给函数，在函数内部进行的更改也反映在函数外部，实际和形式参数将在同一内存位置创建
  */
 
 using namespace std;
 //using namespace std::cin; 可能效果会更好
+
+void swap(int *x, int *y) {
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+int factorica(int n) {
+    if (n < 0)
+        return (-1);
+    if (n == 0)
+        return 1;
+    else {
+        return n * factorica(n - 1);
+    }
+}
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -104,6 +168,34 @@ int main(int argc, const char * argv[]) {
     cout << "www.baidu.com" << endl;
     cout << "End of line" << endl;
     
+    int arr[5] = {10, 0, 20, 0, 30};
+    for (int i = 0; i < 5; i++) {
+        std::cout << arr[i] << "\n";
+    }
+    
+    for (int i : arr) {
+        std::cout << i << "\n";
+    }
+    
+    if (age % 2 == 0) {
+        std::cout << "It is a num"<<std::endl;
+    } else {
+        std::cout << "It is not a num" << std::endl;
+    }
+    
+//    for (; ; ) {
+//        std::cout << "Maybe do no countable times"<< std::endl;
+//    }
+    
+    int x = 50, y = 100;
+    swap(&x, &y);
+    std::cout << "Value of x is:" << x << std::endl;
+    std::cout << "Value of y is:" << y << std::endl;
+    
+    
+    int  fact = 5, value;
+    value = factorica(fact);
+    std::cout << "value of factorica:" << value << std::endl;
     
     return 0;
 }
