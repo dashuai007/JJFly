@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA06DF9C200F6D7F009259BE /* JAOP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA06DF9A200F6D7F009259BE /* JAOP.cpp */; };
+		BA0EE01D2010C7B000D1C312 /* JAVP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA0EE01C2010C7B000D1C312 /* JAVP.cpp */; };
 		BAB282562004B6A900C9312E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAB282552004B6A900C9312E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		BA06DF9A200F6D7F009259BE /* JAOP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JAOP.cpp; sourceTree = "<group>"; };
 		BA06DF9B200F6D7F009259BE /* JAOP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JAOP.hpp; sourceTree = "<group>"; };
+		BA0EE01C2010C7B000D1C312 /* JAVP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JAVP.cpp; sourceTree = "<group>"; };
 		BAB282522004B6A900C9312E /* JACCC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JACCC; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB282552004B6A900C9312E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 			children = (
 				BAB282552004B6A900C9312E /* main.cpp */,
 				BA06DF9A200F6D7F009259BE /* JAOP.cpp */,
+				BA0EE01C2010C7B000D1C312 /* JAVP.cpp */,
 				BA06DF9B200F6D7F009259BE /* JAOP.hpp */,
 			);
 			path = JACCC;
@@ -124,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0EE01D2010C7B000D1C312 /* JAVP.cpp in Sources */,
 				BAB282562004B6A900C9312E /* main.cpp in Sources */,
 				BA06DF9C200F6D7F009259BE /* JAOP.cpp in Sources */,
 			);
