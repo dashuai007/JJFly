@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <UICKeyChainStore/UICKeyChainStore.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self getUniqueString];
     return YES;
 }
 
@@ -30,6 +31,19 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+- (void)getUniqueString {
+    NSString *result = [[UICKeyChainStore keyChainStore] stringForKey:@"esunnyuuid"];
+    if (result) {
+        NSLog(@"获取结果：%@", result);
+    } else {
+        NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [[UICKeyChainStore keyChainStore] setString:uuid forKey:@"esunnyuuid"];
+        NSLog(@"存入结果%@", uuid);
+    }
+    //D6F18701-3F68-4038-AF86-F34226E0E0C4
+    //D6F18701-3F68-4038-AF86-F34226E0E0C4
 }
 
 

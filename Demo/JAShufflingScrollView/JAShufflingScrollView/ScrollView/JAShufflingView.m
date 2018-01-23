@@ -146,6 +146,136 @@
 //    [timer fire];
 }
 
+bool TKLineControl::SPEC_SAR(double AfStep, double AfLimit)
+{
+    double Af = AfStep;
+    double HHValue = 0; //最高值
+    double LLValue = 0; //最低值
+    double ParOpen = 0;//下一根K线停损值
+    int Position = 0;//持仓方向
+    int curr(m_AxisX.KData.ReadIndex);
+    while (curr != m_AxisX.End)
+    {
+        HisQuoteData& d = m_AxisX.KData.Data[curr];
+        //计算SAR值
+        QPriceType& sarVal = m_Cache[0][curr];
+        
+        if (curr == m_AxisX.KData.ReadIndex)
+        {
+            Position = 1;
+            HHValue = d.QHighPrice;
+            LLValue = d.QLowPrice;
+            sarVal = LLValue;
+            ParOpen = sarVal + Af * (HHValue - sarVal);
+            if (ParOpen > d.QLowPrice)
+            {
+                ParOpen = d.QLowPrice;
+            }
+        }
+        else
+        {
+            int nNext = (curr - 1 + MAX_SHOW_KLINE_X) % MAX_SHOW_KLINE_X;
+            HisQuoteData& pred = m_AxisX.KData.Data[nNext];
+            if (Position == 1) //多头
+            {
+                if (d.QLowPrice <= ParOpen)
+                {
+                    Position = -1;
+                    sarVal = HHValue;
+                    HHValue = d.QHighPrice;
+                    LLValue = d.QLowPrice;
+                    Af = AfStep;
+                    /////////
+                    ParOpen = sarVal + Af * (LLValue - sarVal);
+                    if (ParOpen < d.QHighPrice)
+                        ParOpen = d.QHighPrice;
+                    if (ParOpen < pred.QHighPrice)
+                        ParOpen = pred.QHighPrice;
+                }
+                else
+                {
+                    sarVal = ParOpen;
+                    if (d.QHighPrice > HHValue&&Af < AfLimit)
+                    {
+                        if (Af + AfStep > AfLimit)
+                            Af = AfLimit;
+                        else
+                            Af = Af + AfStep;
+                    }
+                    if (d.QHighPrice > HHValue)
+                    {
+                        HHValue = d.QHighPrice;
+                    }
+                    if (d.QLowPrice < LLValue)
+                    {
+                        LLValue = d.QLowPrice;
+                    }
+                    ParOpen = sarVal + Af * (HHValue - sarVal);
+                    if (ParOpen > d.QLowPrice)
+                    {
+                        ParOpen = d.QLowPrice;
+                    }
+                    if (ParOpen > pred.QLowPrice)
+                    {
+                        ParOpen = pred.QLowPrice;
+                    }
+                }
+            }
+            else //空头
+            {
+                if (d.QHighPrice >= ParOpen)
+                {
+                    Position = 1;
+                    sarVal = LLValue;
+                    HHValue = d.QHighPrice;
+                    LLValue = d.QLowPrice;
+                    Af = AfStep;
+                    ParOpen = sarVal + Af * (HHValue - sarVal);
+                    if (ParOpen > d.QLowPrice)
+                    {
+                        ParOpen = d.QLowPrice;
+                    }
+                    if (ParOpen > pred.QLowPrice)
+                    {
+                        ParOpen = pred.QLowPrice;
+                    }
+                }
+                else
+                {
+                    sarVal = ParOpen;
+                    if (d.QLowPrice < LLValue&&Af < AfLimit)
+                    {
+                        if (Af + AfStep > AfLimit)
+                            Af = AfLimit;
+                        else
+                            Af = Af + AfStep;
+                    }
+                    if (d.QHighPrice > HHValue)
+                    {
+                        HHValue = d.QHighPrice;
+                    }
+                    if (d.QLowPrice < LLValue)
+                    {
+                        LLValue = d.QLowPrice;
+                    }
+                    ParOpen = sarVal + Af * (LLValue - sarVal);
+                    if (ParOpen < d.QHighPrice)
+                    {
+                        ParOpen = d.QHighPrice;
+                    }
+                    if (ParOpen < pred.QHighPrice)
+                    {
+                        ParOpen = pred.QHighPrice;
+                    }
+                }
+            }
+        }
+        m_Cache[1][curr] = Position;
+        curr = (curr + 1) % MAX_SHOW_KLINE_X;
+    }
+    return true;
+}
+
 
 - (void)dealloc {
     [timer invalidate];
