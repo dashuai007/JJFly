@@ -1,0 +1,3 @@
+target 'JJSDWebImage' do
+	pod 'SDWebImage', '~>4.2.3'
+end
