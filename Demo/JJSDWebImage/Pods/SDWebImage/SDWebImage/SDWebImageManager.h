@@ -45,51 +45,54 @@ typedef NS_OPTIONS(NSUInteger, SDWebImageOptions) {
      * If a cached image is refreshed, the completion block is called once with the cached image and again with the final image.
      *
      * Use this flag only if you can't make your URLs static with embedded cache busting parameter.
-     刷新缓存 1：05
+     刷新缓存 1：05 看看你服务器中的图片是否更换，如果更换就下载，否则从缓存里查找
      */
     SDWebImageRefreshCached = 1 << 4,
 
     /**
      * In iOS 4+, continue the download of the image if the app goes to background. This is achieved by asking the system for
      * extra time in background to let the request finish. If the background task expires the operation will be cancelled.
+     后台下载
      */
     SDWebImageContinueInBackground = 1 << 5,
 
     /**
      * Handles cookies stored in NSHTTPCookieStore by setting
      * NSMutableURLRequest.HTTPShouldHandleCookies = YES;
+     是否管理cookie
      */
     SDWebImageHandleCookies = 1 << 6,
 
     /**
      * Enable to allow untrusted SSL certificates.
      * Useful for testing purposes. Use with caution in production.
+     允许使用不受信任的SSL整数
      */
     SDWebImageAllowInvalidSSLCertificates = 1 << 7,
 
     /**
      * By default, images are loaded in the order in which they were queued. This flag moves them to
-     * the front of the queue.
+     * the front of the queue.优先下载
      */
     SDWebImageHighPriority = 1 << 8,
     
     /**
      * By default, placeholder images are loaded while the image is loading. This flag will delay the loading
-     * of the placeholder image until after the image has finished loading.
+     * of the placeholder image until after the image has finished loading.延迟展位图
      */
     SDWebImageDelayPlaceholder = 1 << 9,
 
     /**
      * We usually don't call transformDownloadedImage delegate method on animated images,
      * as most transformation code would mangle it.
-     * Use this flag to transform them anyway.
+     * Use this flag to transform them anyway.改变站位的图像
      */
     SDWebImageTransformAnimatedImage = 1 << 10,
     
     /**
      * By default, image is added to the imageView after download. But in some cases, we want to
      * have the hand before setting the image (apply a filter or add it with cross-fade animation for instance)
-     * Use this flag if you want to manually set the image in the completion when success
+     * Use this flag if you want to manually set the image in the completion when success 避免自动设置图片
      */
     SDWebImageAvoidAutoSetImage = 1 << 11,
     

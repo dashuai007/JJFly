@@ -8,9 +8,7 @@
 
 #import "ViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-@interface ViewController ()
 
-@end
 
 /**
  分析SDWebImageManager
@@ -29,7 +27,20 @@
  3、enum只能使用一个，option可以使用多个
  4、编译方式不一样，option使用的是C++编译方式NSUInter，
  
+ NSCache苹果官方提供的，专门做缓存的类
+ 使用方式和NSMutableDictionary使用很相似
+ 线程安全
+ 当内存不足的时候，就会自动清理缓存
+ 程序开始的时候，自己可以指定数量和成本的概念
+ NSCache不支持遍历，而是通过key进行访问的
  */
+
+@interface ViewController () <NSCacheDelegate>
+{
+    NSCache *_cache;
+}
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -53,6 +64,27 @@
 
 }
 
+- (void)cacheInit {
+    _cache = [NSCache new];
+    _cache.countLimit = 10;
+    _cache.delegate = self;
+}
+//查看缓存内容
+- (void)showCache {
+    for (int i = 0; i < 20; i++) {
+        id obj = [_cache objectForKey:@(i)];
+        NSLog(@"%@", obj);
+    }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    for (int i = 0; i < 20; i++) {
+        NSString *str = [@"隔壁老王有" stringByAppendingFormat:@"%d个", i];
+        [_cache setObject:str forKey:@(i)];
+        NSLog(@"%@", [_cache objectForKey:@(i)]);
+    }
+}
+
 /**
 是否支持当前VC自动旋转
  */
@@ -63,6 +95,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)cache:(NSCache *)cache willEvictObject:(id)obj {
+    NSLog(@"will evict --%@", obj);
 }
 
 
