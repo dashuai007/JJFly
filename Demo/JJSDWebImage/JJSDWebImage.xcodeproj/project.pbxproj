@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D6C6FB7FCF1E6EC167C00F6 /* libPods-JJSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBA22D9A0F30FE9C70F11B8 /* libPods-JJSDWebImage.a */; };
+		290FE27F74EF281D101694C9 /* libPods-JJSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 284EFA1840C2FDAB71AB7CCE /* libPods-JJSDWebImage.a */; };
 		BA08DCF12017528D00EF0F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA08DCF02017528D00EF0F5E /* AppDelegate.m */; };
 		BA08DCF42017528D00EF0F5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA08DCF32017528D00EF0F5E /* ViewController.m */; };
 		BA08DCF72017528D00EF0F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA08DCF52017528D00EF0F5E /* Main.storyboard */; };
@@ -16,6 +16,7 @@
 		BA08DCFF2017528D00EF0F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA08DCFE2017528D00EF0F5E /* main.m */; };
 		BA08DD092017528E00EF0F5E /* JJSDWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA08DD082017528E00EF0F5E /* JJSDWebImageTests.m */; };
 		BA08DD142017528E00EF0F5E /* JJSDWebImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA08DD132017528E00EF0F5E /* JJSDWebImageUITests.m */; };
+		BA1D253A20196694001C548B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1D253920196694001C548B /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284EFA1840C2FDAB71AB7CCE /* libPods-JJSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJSDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394B499C36426278C68DD51D /* Pods-JJSDWebImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJSDWebImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJSDWebImage/Pods-JJSDWebImage.release.xcconfig"; sourceTree = "<group>"; };
 		BA08DCEC2017528D00EF0F5E /* JJSDWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSDWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA08DCEF2017528D00EF0F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +55,9 @@
 		BA08DD0F2017528E00EF0F5E /* JJSDWebImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJSDWebImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA08DD132017528E00EF0F5E /* JJSDWebImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSDWebImageUITests.m; sourceTree = "<group>"; };
 		BA08DD152017528E00EF0F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1D253820196694001C548B /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BA1D253920196694001C548B /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C1CC829D1EA8F1D3019C7F6D /* Pods-JJSDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJSDWebImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJSDWebImage/Pods-JJSDWebImage.debug.xcconfig"; sourceTree = "<group>"; };
-		DFBA22D9A0F30FE9C70F11B8 /* libPods-JJSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJSDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6C6FB7FCF1E6EC167C00F6 /* libPods-JJSDWebImage.a in Frameworks */,
+				290FE27F74EF281D101694C9 /* libPods-JJSDWebImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +89,7 @@
 		356444C064F2EE77D8925AA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFBA22D9A0F30FE9C70F11B8 /* libPods-JJSDWebImage.a */,
+				284EFA1840C2FDAB71AB7CCE /* libPods-JJSDWebImage.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +123,8 @@
 				BA08DCF02017528D00EF0F5E /* AppDelegate.m */,
 				BA08DCF22017528D00EF0F5E /* ViewController.h */,
 				BA08DCF32017528D00EF0F5E /* ViewController.m */,
+				BA1D253820196694001C548B /* HomeViewController.h */,
+				BA1D253920196694001C548B /* HomeViewController.m */,
 				BA08DCF52017528D00EF0F5E /* Main.storyboard */,
 				BA08DCF82017528D00EF0F5E /* Assets.xcassets */,
 				BA08DCFA2017528D00EF0F5E /* LaunchScreen.storyboard */,
@@ -327,9 +332,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JJSDWebImage/Pods-JJSDWebImage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Lotusoot/Lotusoot.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lotusoot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,6 +356,7 @@
 				BA08DCF42017528D00EF0F5E /* ViewController.m in Sources */,
 				BA08DCFF2017528D00EF0F5E /* main.m in Sources */,
 				BA08DCF12017528D00EF0F5E /* AppDelegate.m in Sources */,
+				BA1D253A20196694001C548B /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

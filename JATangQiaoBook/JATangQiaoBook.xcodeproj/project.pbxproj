@@ -16,7 +16,9 @@
 		BA12D57B1FBE7CC1009B2006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D57A1FBE7CC1009B2006 /* main.m */; };
 		BA12D5851FBE7CC1009B2006 /* JATangQiaoBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D5841FBE7CC1009B2006 /* JATangQiaoBookTests.m */; };
 		BA12D5901FBE7CC1009B2006 /* JATangQiaoBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D58F1FBE7CC1009B2006 /* JATangQiaoBookUITests.m */; };
-		BA12D59F1FBE7D2A009B2006 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D59E1FBE7D2A009B2006 /* GCDViewController.m */; };
+		BA12D59F1FBE7D2A009B2006 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA12D59E1FBE7D2A009B2006 /* BlockViewController.m */; };
+		BA97019C201AB6DA0069908C /* Object-C_Program in Resources */ = {isa = PBXBuildFile; fileRef = BA97019B201AB6DA0069908C /* Object-C_Program */; };
+		BA97019F201ABB690069908C /* NewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97019E201ABB690069908C /* NewObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,11 @@
 		BA12D58B1FBE7CC1009B2006 /* JATangQiaoBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JATangQiaoBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA12D58F1FBE7CC1009B2006 /* JATangQiaoBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JATangQiaoBookUITests.m; sourceTree = "<group>"; };
 		BA12D5911FBE7CC1009B2006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA12D59D1FBE7D2A009B2006 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
-		BA12D59E1FBE7D2A009B2006 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		BA12D59D1FBE7D2A009B2006 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		BA12D59E1FBE7D2A009B2006 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		BA97019B201AB6DA0069908C /* Object-C_Program */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Object-C_Program"; sourceTree = "<group>"; };
+		BA97019D201ABB690069908C /* NewObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewObject.h; sourceTree = "<group>"; };
+		BA97019E201ABB690069908C /* NewObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewObject.m; sourceTree = "<group>"; };
 		DA6F9F4DDA8DB491AD4269F0 /* Pods-JATangQiaoBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATangQiaoBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook.debug.xcconfig"; sourceTree = "<group>"; };
 		E8198FE5C1D442181B366C89 /* Pods-JATangQiaoBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATangQiaoBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +120,11 @@
 				BA12D56C1FBE7CC1009B2006 /* AppDelegate.m */,
 				BA12D56E1FBE7CC1009B2006 /* ViewController.h */,
 				BA12D56F1FBE7CC1009B2006 /* ViewController.m */,
-				BA12D59D1FBE7D2A009B2006 /* GCDViewController.h */,
-				BA12D59E1FBE7D2A009B2006 /* GCDViewController.m */,
+				BA12D59D1FBE7D2A009B2006 /* BlockViewController.h */,
+				BA12D59E1FBE7D2A009B2006 /* BlockViewController.m */,
+				BA97019D201ABB690069908C /* NewObject.h */,
+				BA97019E201ABB690069908C /* NewObject.m */,
+				BA97019B201AB6DA0069908C /* Object-C_Program */,
 				BA12D5711FBE7CC1009B2006 /* Main.storyboard */,
 				BA12D5741FBE7CC1009B2006 /* Assets.xcassets */,
 				BA12D5761FBE7CC1009B2006 /* LaunchScreen.storyboard */,
@@ -272,6 +280,7 @@
 			files = (
 				BA12D5781FBE7CC1009B2006 /* LaunchScreen.storyboard in Resources */,
 				BA12D5751FBE7CC1009B2006 /* Assets.xcassets in Resources */,
+				BA97019C201AB6DA0069908C /* Object-C_Program in Resources */,
 				BA12D5731FBE7CC1009B2006 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +360,8 @@
 				BA12D5701FBE7CC1009B2006 /* ViewController.m in Sources */,
 				BA12D57B1FBE7CC1009B2006 /* main.m in Sources */,
 				BA12D56D1FBE7CC1009B2006 /* AppDelegate.m in Sources */,
-				BA12D59F1FBE7D2A009B2006 /* GCDViewController.m in Sources */,
+				BA97019F201ABB690069908C /* NewObject.m in Sources */,
+				BA12D59F1FBE7D2A009B2006 /* BlockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

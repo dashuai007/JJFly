@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1D25542019CED1001C548B /* libyy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1D25532019CED1001C548B /* libyy.a */; };
+		BA1D25572019CF8F001C548B /* File in Resources */ = {isa = PBXBuildFile; fileRef = BA1D25562019CF8F001C548B /* File */; };
+		BA1D25742019D64B001C548B /* ESTestRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA1D25732019D64A001C548B /* ESTestRes.bundle */; };
 		BA49BD5B1FFE14B300A74374 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD5A1FFE14B300A74374 /* AppDelegate.m */; };
 		BA49BD5E1FFE14B300A74374 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA49BD5D1FFE14B300A74374 /* ViewController.m */; };
 		BA49BD611FFE14B300A74374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA49BD5F1FFE14B300A74374 /* Main.storyboard */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA1D25532019CED1001C548B /* libyy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyy.a; sourceTree = "<group>"; };
+		BA1D25552019CEF7001C548B /* JATestLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JATestLibrary.h; path = ../../JATestLibrary/JATestLibrary/JATestLibrary.h; sourceTree = "<group>"; };
+		BA1D25562019CF8F001C548B /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		BA1D25732019D64A001C548B /* ESTestRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ESTestRes.bundle; sourceTree = "<group>"; };
 		BA49BD561FFE14B300A74374 /* JAShufflingScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAShufflingScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA49BD591FFE14B300A74374 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA49BD5A1FFE14B300A74374 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1D25542019CED1001C548B /* libyy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,7 @@
 				BA49BD711FFE14B300A74374 /* JAShufflingScrollViewTests */,
 				BA49BD7C1FFE14B300A74374 /* JAShufflingScrollViewUITests */,
 				BA49BD571FFE14B300A74374 /* Products */,
+				BA1D25732019D64A001C548B /* ESTestRes.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +119,8 @@
 				BA49BD5D1FFE14B300A74374 /* ViewController.m */,
 				BA49BD8B1FFE14DB00A74374 /* ScrollView */,
 				BA49BD5F1FFE14B300A74374 /* Main.storyboard */,
+				BA1D25552019CEF7001C548B /* JATestLibrary.h */,
+				BA1D25532019CED1001C548B /* libyy.a */,
 				BA49BD621FFE14B300A74374 /* Assets.xcassets */,
 				BA49BD641FFE14B300A74374 /* LaunchScreen.storyboard */,
 				BA49BD671FFE14B300A74374 /* Info.plist */,
@@ -141,6 +152,7 @@
 			children = (
 				BA49BD8C1FFE155700A74374 /* JAShufflingView.h */,
 				BA49BD8D1FFE155700A74374 /* JAShufflingView.m */,
+				BA1D25562019CF8F001C548B /* File */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -251,6 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1D25572019CF8F001C548B /* File in Resources */,
+				BA1D25742019D64B001C548B /* ESTestRes.bundle in Resources */,
 				BA49BD661FFE14B300A74374 /* LaunchScreen.storyboard in Resources */,
 				BA49BD631FFE14B300A74374 /* Assets.xcassets in Resources */,
 				BA49BD611FFE14B300A74374 /* Main.storyboard in Resources */,
@@ -448,6 +462,10 @@
 				DEVELOPMENT_TEAM = 567J8UWLT4;
 				INFOPLIST_FILE = JAShufflingScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JAShufflingScrollView",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,6 +480,10 @@
 				DEVELOPMENT_TEAM = 567J8UWLT4;
 				INFOPLIST_FILE = JAShufflingScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JAShufflingScrollView",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = JJFly.JAShufflingScrollView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

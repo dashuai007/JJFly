@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import <SDWebImage/SDImageCache.h>
 @interface AppDelegate ()
 
@@ -25,9 +26,13 @@
     // Override point for customization after application launch.
     
     //添加缓存路径 add a custom read-only path
-    NSString *bundledPath = [[NSBundle mainBundle] resourcePath];
-    [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
+//    NSString *bundledPath = [[NSBundle mainBundle] resourcePath];
+//    [[SDImageCache sharedImageCache] addReadOnlyCachePath:bundledPath];
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

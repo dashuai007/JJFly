@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "JATestLibrary.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    int value = [JATestLibrary getAddPara:10 paraB:20];
+    
     return YES;
 }
 

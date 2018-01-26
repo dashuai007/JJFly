@@ -1,0 +1,9 @@
+#生成动态库
+#1.用xcode创建一个新的项目 选择cocoa touch Satic Library
+#2.向其中添加代码 注意左边products .a文件是红色，表示还没有这个文件
+#3.编译之前需要将模式改为release模式 edit scheme -> Run -> release
+#4.修改完成之后需要在模拟器和真机进行编译
+#5.命令行lipo -create 真机(路径1).a 模拟(路径).a -output /users/xiazhongcong/Desktop/libyy.a
+#6.运用的时候把.h和.a拖进项目中
+#！！！注意选择支持版本
+

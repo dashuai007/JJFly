@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreText/CoreText.h>
-#import "GCDViewController.h"
+#import "BlockViewController.h"
 #import "POP.h"
 @interface ViewController ()
 @property (nonatomic, strong) UIView *centerView;

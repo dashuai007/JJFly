@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^BtnBlock)(NSString *str);
-@interface GCDViewController : UIViewController
-//@property (copy, nonatomic) BtnBlock block;
-- (void)clickBlock:(BtnBlock)block;
+@interface BlockViewController : UIViewController
+
 @end
