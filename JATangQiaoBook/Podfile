@@ -1,4 +1,5 @@
  target 'JATangQiaoBook' do
     pod 'pop', '~>1.0.10'
     pod 'UICKeyChainStore', '~>2.1.1'
+    pod 'JARes', '~>1.0.0'
 end

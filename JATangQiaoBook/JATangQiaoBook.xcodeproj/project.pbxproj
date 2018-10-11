@@ -180,8 +180,6 @@
 				BA12D5641FBE7CC1009B2006 /* Sources */,
 				BA12D5651FBE7CC1009B2006 /* Frameworks */,
 				BA12D5661FBE7CC1009B2006 /* Resources */,
-				25D08F5725A593572E778E12 /* [CP] Embed Pods Frameworks */,
-				91D69E90ECF3FB671EE634F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,36 +300,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25D08F5725A593572E778E12 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91D69E90ECF3FB671EE634F9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATangQiaoBook/Pods-JATangQiaoBook-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A384E8FF998ABC41D85D92B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -10,6 +10,7 @@
 #import <CoreText/CoreText.h>
 #import "BlockViewController.h"
 #import "POP.h"
+#import "UIViewExtension.h"
 @interface ViewController ()
 @property (nonatomic, strong) UIView *centerView;
 @end
@@ -30,6 +31,7 @@
     self.view.backgroundColor = [UIColor redColor];
     
     [self centerView];
+    NSLog(@"%f %f", self.centerView.width, self.centerView.height);
     
 }
 
